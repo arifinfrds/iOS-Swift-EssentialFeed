@@ -106,3 +106,14 @@ Given the customer doesn't have connectivity
 
 #### Saving error course (sad path):
 1. System delivers error.
+
+## Model Specs
+
+### Feed Item
+
+| Property              | Type                        |
+|---------------------|---------------------   |
+| `id`                      | `UUID`                     |
+| `description`   | `String` (optional) |
+| `location`         | `String` (optional) |
+| `url`                    | `URL`                       |
