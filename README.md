@@ -94,15 +94,21 @@ Given the customer doesn't have connectivity
 
 ---
 
-### Cache Feed Image Data Use Case
+### Cache Feed Use Case
 
 #### Data:
-- Image Data
+- Feed Items
 
 #### Primary course (happy path):
-1. Execute "Save Image Data" command with above data.
-2. System caches image data.
-3. System delivers success message.
+1. Execute "Save Feed Items" command with above data.
+2. System deletes old cache data.
+3. System encodes feed items.
+4. System timestamps the new cache.
+5. System saves new cache data.
+6. System delivers sucess message.
+
+#### Deleting error course (sad path):
+1. System delivers error.
 
 #### Saving error course (sad path):
 1. System delivers error.
