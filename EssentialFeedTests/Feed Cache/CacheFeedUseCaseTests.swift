@@ -17,7 +17,7 @@ class LocalFeedLoader {
 }
 
 class FeedStore {
-    var deleteCacheCallCount = 0
+    var deleteCacheFeedCallCount = 0
 }
 
 class CacheFeedUseCaseTests: XCTestCase {
@@ -26,7 +26,7 @@ class CacheFeedUseCaseTests: XCTestCase {
         let store = FeedStore()
         _ = LocalFeedLoader(store: store)
     
-        XCTAssertEqual(store.deleteCacheCallCount, 0)
+        XCTAssertEqual(store.deleteCacheFeedCallCount, 0)
     }
     
 }
