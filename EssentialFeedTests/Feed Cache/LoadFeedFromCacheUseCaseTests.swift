@@ -55,8 +55,8 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
             switch result {
             case let .success(images):
                 receivedImages = images
-            case .failure(let error):
-                XCTFail("Expected success, got failure instead with error: \(error)")
+            default:
+                XCTFail("Expected success, got \(result) instead.")
             }
             exp.fulfill()
         }
