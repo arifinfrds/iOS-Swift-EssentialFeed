@@ -30,11 +30,3 @@ extension Date {
     }
     
 }
-
-func anyNSError() -> NSError {
-    return NSError(domain: "Any error", code: 0)
-}
-
-func anyURL() -> URL {
-    return URL(string: "https://any-url.com")!
-}
