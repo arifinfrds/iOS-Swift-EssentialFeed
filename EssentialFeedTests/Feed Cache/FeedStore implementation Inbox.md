@@ -1,6 +1,6 @@
 ```
 Retrieve
-    - ⭐️ empty cache works (before something is inserted)
+    - ✅ empty cache works (before something is inserted)
     - non-empty cache return data
     - non-empty cache twice return same data (retrieve should have no side-effects)
     - Error (if possible to simulate e.g., invalid data)
