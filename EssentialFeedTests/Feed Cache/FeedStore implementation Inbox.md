@@ -1,14 +1,14 @@
 ```
+Retrieve
+    - ⭐️ empty cache works (before something is inserted)
+    - non-empty cache return data
+    - non-empty cache twice return same data (retrieve should have no side-effects)
+    - Error (if possible to simulate e.g., invalid data)
+    
 Insert
     - to empty cache works
     - to non-empty cache overrides previous value
     - Error (if possible e.g., no write permission)
-
-Retrieve
-    - empty cache works (before something is inserted)
-    - non-empty cache return data
-    - non-empty cache twice return same data (retrieve should have no side-effects)
-    - Error (if possible to simulate e.g., invalid data)
 
 Delete
     - empty cache does nothing (cache stays empty and does not fail)
