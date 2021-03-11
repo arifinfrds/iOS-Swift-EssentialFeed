@@ -9,7 +9,7 @@
 import XCTest
 import EssentialFeed
 
-class CodableFeedStore: FeedStore {
+final class CodableFeedStore: FeedStore {
     private struct Cache: Codable {
         let feed: [CodableFeedImage]
         let timestamp: Date
