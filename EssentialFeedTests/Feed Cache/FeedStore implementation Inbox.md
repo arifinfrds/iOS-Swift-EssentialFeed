@@ -12,10 +12,10 @@
     ✅ to non-empty cache overrides previous value
     ✅ Error (if possible e.g., no write permission)
 
-Delete
-    - ❌ empty cache does nothing (cache stays empty and does not fail)
-    - inserted data leaves cache empty
-    - Error (if possible to simulate e.g., no write permission)
+✅ Delete
+    ✅ empty cache does nothing (cache stays empty and does not fail)
+    ✅ inserted data leaves cache empty
+    ✅ Error (if possible to simulate e.g., no write permission)
     
 Side-effects must run serially to avoid race-conditions (deleting the wrong cache... overriding the latest data...)
 ```
