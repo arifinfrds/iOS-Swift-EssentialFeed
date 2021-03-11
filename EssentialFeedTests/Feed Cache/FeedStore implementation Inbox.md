@@ -3,7 +3,7 @@ Retrieve
     - ✅ empty cache works (before something is inserted)
     - ✅ empty cache twice return sampe empty cache (no side-effects)
     - ✅ non-empty cache return data
-    - non-empty cache twice return same data (retrieve should have no side-effects)
+    - ⭐️ non-empty cache twice return same data (retrieve should have no side-effects)
     - Error return error (if possible to simulate e.g., invalid data)
     - Error twice return same error (if possible to simulate e.g., invalid data)
     
