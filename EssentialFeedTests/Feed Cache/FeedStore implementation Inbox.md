@@ -9,7 +9,7 @@ Retrieve
     
 Insert
     - ✅ to empty cache works
-    - to non-empty cache overrides previous value
+    - ✅ to non-empty cache overrides previous value
     - Error (if possible e.g., no write permission)
 
 Delete
