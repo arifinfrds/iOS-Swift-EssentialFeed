@@ -5,7 +5,7 @@ Retrieve
     - ✅ non-empty cache return data
     - ✅ non-empty cache twice return same data (retrieve shoul d have no side-effects)
     - ✅ Error return error (if possible to simulate e.g., invalid data)
-    - ❌ Error twice return same error (if possible to simulate e.g., invalid data)
+    - ✅ Error twice return same error (if possible to simulate e.g., invalid data)
     
 Insert
     - ✅ to empty cache works
