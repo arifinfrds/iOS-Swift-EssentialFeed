@@ -17,5 +17,5 @@
     ✅ inserted data leaves cache empty
     ✅ Error (if possible to simulate e.g., no write permission)
     
-Side-effects must run serially to avoid race-conditions (deleting the wrong cache... overriding the latest data...)
+✅ Side-effects must run serially to avoid race-conditions (deleting the wrong cache... overriding the latest data...)
 ```
