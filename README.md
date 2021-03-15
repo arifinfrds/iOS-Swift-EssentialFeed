@@ -78,7 +78,7 @@ Given the customer doesn't have connectivity
 
 #### Primary course:
 1. Execute "Load Image Feed" command with above data.
-2. System retrieves feed data from cache.
+2. System retrieve feed data from cache.
 3. System validates cache is less than seven days old.
 4. System creates image feed from cached data.
 5. System delivers image feed.
@@ -94,6 +94,21 @@ Given the customer doesn't have connectivity
 
 ---
 
+### Validate Feed Cache Use Case
+
+#### Primary course:
+1. Execute "Load Image Feed" command with above data.
+2. System retrieve feed data from cache.
+3. System validates cache is less than seven days old.
+
+#### Retrieval error course (sad path):
+1. System deletes cache.
+
+#### Expired cache course (sad path): 
+1. System deletes cache.
+
+---
+
 ### Cache Feed Use Case
 
 #### Data:
@@ -105,7 +120,7 @@ Given the customer doesn't have connectivity
 3. System encodes feed items.
 4. System timestamps the new cache.
 5. System saves new cache data.
-6. System delivers sucess message.
+6. System delivers success message.
 
 #### Deleting error course (sad path):
 1. System delivers error.
