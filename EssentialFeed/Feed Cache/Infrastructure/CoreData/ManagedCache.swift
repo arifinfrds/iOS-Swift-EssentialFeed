@@ -19,15 +19,19 @@ internal class ManagedCache: NSManagedObject {
             .compactMap { $0 as? ManagedFeedImage }
             .map { $0.local }
     }
+}
+ 
+extension ManagedCache {
     
-    static func find(in context: NSManagedObjectContext) throws -> ManagedCache? {
+    internal static func find(in context: NSManagedObjectContext) throws -> ManagedCache? {
         let request = NSFetchRequest<ManagedCache>(entityName: ManagedCache.entity().name!)
         request.returnsObjectsAsFaults = false
         return try context.fetch(request).first
     }
     
-    static func newUniqueInstance(in context: NSManagedObjectContext) throws -> ManagedCache {
+    internal static func newUniqueInstance(in context: NSManagedObjectContext) throws -> ManagedCache {
         try find(in: context).map(context.delete)
         return ManagedCache(context: context)
     }
+    
 }
