@@ -101,7 +101,7 @@ class URLSessionHTTPClientTests: XCTestCase {
         let result = resultFor(data: data, response: response, error: error)
         
         switch result {
-        case let .success(data, response):
+        case let .success((data, response)):
             return (data, response)
         case let .failure(error):
             XCTFail("Expected success, but got failure instead with error: \(error)")
