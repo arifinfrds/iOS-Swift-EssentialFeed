@@ -172,7 +172,7 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
     
     func expect(
         _ sut: RemoteFeedLoader,
-        toCompleteWithResult expectedResult: RemoteFeedLoader.Result,
+        toCompleteWithResult expectedResult: FeedLoader.Result,
         when action: (() -> Void),
         file: StaticString = #filePath,
         line: UInt = #line
@@ -181,10 +181,10 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         
         sut.load { receivedResult in
             switch (receivedResult, expectedResult) {
-            case let (LoadFeedResult.success(receivedItems), RemoteFeedLoader.Result.success(expectedItems)):
+            case let (RemoteFeedLoader.Result.success(receivedItems), RemoteFeedLoader.Result.success(expectedItems)):
                 XCTAssertEqual(receivedItems, expectedItems, file: file, line: line)
                 
-            case let (LoadFeedResult.failure(receivedError as RemoteFeedLoader.Error), RemoteFeedLoader.Result.failure(expectedError as RemoteFeedLoader.Error)):
+            case let (RemoteFeedLoader.Result.failure(receivedError as RemoteFeedLoader.Error), RemoteFeedLoader.Result.failure(expectedError as RemoteFeedLoader.Error)):
                 XCTAssertEqual(receivedError, expectedError, file: file, line: line)
                 
             default:
