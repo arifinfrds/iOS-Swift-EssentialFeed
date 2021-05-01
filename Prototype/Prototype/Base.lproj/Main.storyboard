@@ -123,7 +123,7 @@
                                 <connections>
                                     <outlet property="descriptionLabel" destination="QVz-W1-U1L" id="J4X-Kp-xxv"/>
                                     <outlet property="feedImageView" destination="60H-dG-ypv" id="Nrn-0I-X0Q"/>
-                                    <outlet property="locationContainer" destination="Otd-5t-IIs" id="gWq-DQ-nXL"/>
+                                    <outlet property="locationContainer" destination="yPl-t6-z7x" id="Aim-m8-Fry"/>
                                     <outlet property="locationLabel" destination="Otd-5t-IIs" id="lzh-g6-0D2"/>
                                 </connections>
                             </tableViewCell>
