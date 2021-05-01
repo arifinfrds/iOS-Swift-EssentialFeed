@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		920F969A263D23AA00C53340 /* FeedImageViewModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F9699263D23AA00C53340 /* FeedImageViewModel+PrototypeData.swift */; };
+		920F969D263D23F300C53340 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F969C263D23F300C53340 /* FeedImageCell.swift */; };
 		921604F6263D10A200FC80EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921604F5263D10A200FC80EE /* AppDelegate.swift */; };
 		921604F8263D10A200FC80EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921604F7263D10A200FC80EE /* SceneDelegate.swift */; };
 		921604FD263D10A200FC80EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921604FB263D10A200FC80EE /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		920F9699263D23AA00C53340 /* FeedImageViewModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+PrototypeData.swift"; sourceTree = "<group>"; };
+		920F969C263D23F300C53340 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		921604F2263D10A200FC80EE /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921604F5263D10A200FC80EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		921604F7263D10A200FC80EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				92160503263D10A300FC80EE /* Info.plist */,
 				92B3BD51263D1FD2007A0542 /* FeedViewController.swift */,
 				920F9699263D23AA00C53340 /* FeedImageViewModel+PrototypeData.swift */,
+				920F969C263D23F300C53340 /* FeedImageCell.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				92B3BD52263D1FD2007A0542 /* FeedViewController.swift in Sources */,
 				921604F8263D10A200FC80EE /* SceneDelegate.swift in Sources */,
 				920F969A263D23AA00C53340 /* FeedImageViewModel+PrototypeData.swift in Sources */,
+				920F969D263D23F300C53340 /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
