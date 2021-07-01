@@ -55,6 +55,7 @@
 		92F40FCF2609D6A90001B305 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F40FCE2609D6A90001B305 /* CoreDataHelpers.swift */; };
 		92F40FD82609D89B0001B305 /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F40FD72609D89B0001B305 /* ManagedCache.swift */; };
 		92F40FDD2609D92F0001B305 /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F40FDC2609D92F0001B305 /* ManagedFeedImage.swift */; };
+		92FE041C268A09500097173F /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FE041B268A09500097173F /* UIView+Shimmering.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +161,7 @@
 		92F40FCE2609D6A90001B305 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 		92F40FD72609D89B0001B305 /* ManagedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
 		92F40FDC2609D92F0001B305 /* ManagedFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedFeedImage.swift; sourceTree = "<group>"; };
+		92FE041B268A09500097173F /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 				9277E6ED26439198009DCAA4 /* Info.plist */,
 				9275E0E62646656A00F26398 /* FeedViewController.swift */,
 				92EC2C7226522D5500A4FE9C /* FeedImageCell.swift */,
+				92FE041B268A09500097173F /* UIView+Shimmering.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FE041C268A09500097173F /* UIView+Shimmering.swift in Sources */,
 				9275E0E72646656A00F26398 /* FeedViewController.swift in Sources */,
 				92EC2C7326522D5500A4FE9C /* FeedImageCell.swift in Sources */,
 			);
