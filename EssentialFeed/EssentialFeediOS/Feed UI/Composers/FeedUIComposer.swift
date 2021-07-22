@@ -19,7 +19,7 @@ public final class FeedUIComposer {
         let refreshController = FeedRefreshViewController(feedLoader: feedLoader)
         let feedController = FeedViewController(refreshController: refreshController)
         
-        let adapter: RefreshControllerAdapter = RefreshControllerAdapterImpl(
+        let adapter = RefreshControllerAdapter(
             adaptee: feedController,
             imageLoader: imageLoader
         )
@@ -29,11 +29,7 @@ public final class FeedUIComposer {
     }
 }
 
-public protocol RefreshControllerAdapter {
-    func adaptOnRefresh(_ feed: [FeedImage])
-}
-
-public final class RefreshControllerAdapterImpl: RefreshControllerAdapter {
+public final class RefreshControllerAdapter {
     
     private weak var adaptee: FeedViewController?
     private let imageLoader: FeedImageDataLoader
