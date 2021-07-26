@@ -31,7 +31,7 @@ public final class FeedUIComposer {
         
         return { [weak controller] feed in
             controller?.tableModel = feed
-                .map { FeedImageCellController(model: $0, imageLoader: imageLoader) }
+                .map { FeedImageCellController(viewModel: FeedImageViewModel(model: $0, imageLoader: imageLoader)) }
         }
     }
 }
