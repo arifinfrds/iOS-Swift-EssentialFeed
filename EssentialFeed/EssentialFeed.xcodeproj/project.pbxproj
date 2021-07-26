@@ -348,8 +348,8 @@
 		928D121626A285B400EF54BA /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
-				92901D7326AE4B3D00B53C42 /* Models */,
 				9274B76D26A6EF6D00F4C8F4 /* Composers */,
+				92901D7326AE4B3D00B53C42 /* Models */,
 				928D120B26A2830900EF54BA /* Controllers */,
 				928D120D26A2832C00EF54BA /* Views */,
 			);
