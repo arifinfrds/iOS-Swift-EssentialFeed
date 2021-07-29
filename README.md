@@ -1,6 +1,6 @@
 # Essential Feed App (Course Exercise from essentialdeveloper.com)
 
-[![Swift](https://github.com/arifinfrds/iOS-Swift-EssentialFeed/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/arifinfrds/iOS-Swift-EssentialFeed/actions/workflows/CI.yml)
+[![CI](https://github.com/arifinfrds/iOS-Swift-EssentialFeed/actions/workflows/CI.yml/badge.svg)](https://github.com/arifinfrds/iOS-Swift-EssentialFeed/actions/workflows/CI.yml)
 
 ## Image Feed Feature Specs
 
