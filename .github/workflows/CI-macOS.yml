@@ -1,4 +1,4 @@
-name: Swift
+name: CI-macOS
 
 on:
   push:
@@ -19,7 +19,3 @@ jobs:
 
     - name: Build and test "CI_macOS"
       run: xcodebuild clean build test -project EssentialFeed/EssentialFeed.xcodeproj -scheme "CI_macOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk macosx -destination "platform=macOS" ONLY_ACTIVE_ARCH=YES
-
-    - name: Build and test "CI_iOS"
-      run: xcodebuild clean build test -project EssentialFeed/EssentialFeed.xcodeproj -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,OS=14.3,name=iPhone 12 Pro Max" ONLY_ACTIVE_ARCH=YES
-
