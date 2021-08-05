@@ -14,7 +14,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         didSet { tableView.reloadData() }
     }
     
-    var refreshController: FeedRefreshViewController?
+    @IBOutlet var refreshController: FeedRefreshViewController?
     
     private var cellControllers = [IndexPath: FeedImageCellController]()
     
@@ -22,7 +22,6 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         super.viewDidLoad()
         
         tableView.prefetchDataSource = self
-        refreshControl = refreshController?.view
         refreshController?.refresh()
     }
     
