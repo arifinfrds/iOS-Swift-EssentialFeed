@@ -85,6 +85,9 @@
                                                             <state key="normal" title="↻">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="Ief-Sh-Iat" eventType="touchUpInside" id="lY0-Wz-Woo"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="secondaryLabelColor"/>
@@ -131,6 +134,14 @@
                                         <constraint firstAttribute="bottom" secondItem="MY1-D2-Rw2" secondAttribute="bottom" constant="8" id="UMs-qE-qBH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="MY1-D2-Rw2" id="XRR-qw-cFu"/>
+                                    <outlet property="feedImageContainer" destination="sPK-69-hvV" id="oKe-R4-07j"/>
+                                    <outlet property="feedImageRetryButton" destination="Gsa-9T-i5N" id="q0I-8M-Plg"/>
+                                    <outlet property="feedImageView" destination="amk-1Q-Tgn" id="mrm-8r-3OA"/>
+                                    <outlet property="locationContainer" destination="cfo-LM-mMF" id="3ZH-9d-84a"/>
+                                    <outlet property="locationLabel" destination="5aR-6i-9R8" id="cd7-Gd-nCZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
