@@ -69,8 +69,8 @@
 		92E1C6BA26BCE8CD004FD867 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1C6B926BCE8CD004FD867 /* UITableView+Dequeueing.swift */; };
 		92E1C6BC26BCE9F6004FD867 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1C6BB26BCE9F6004FD867 /* UIImageView+Animations.swift */; };
 		92EC2C7326522D5500A4FE9C /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC2C7226522D5500A4FE9C /* FeedImageCell.swift */; };
-		92EF47A726C21AC500B9A568 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92EF47A626C21AC500B9A568 /* Feed.strings */; };
 		92EF47A926C21D5300B9A568 /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF47A826C21D5300B9A568 /* FeedViewControllerTests+Localization.swift */; };
+		92EF47AE26C21FBC00B9A568 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92EF47B026C21FBC00B9A568 /* Feed.strings */; };
 		92F114972646549700ABB6B9 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D6F6F12595C07800B6E691 /* XCTestCase+MemoryLeakTracker.swift */; };
 		92F40FCF2609D6A90001B305 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F40FCE2609D6A90001B305 /* CoreDataHelpers.swift */; };
 		92F40FD82609D89B0001B305 /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F40FD72609D89B0001B305 /* ManagedCache.swift */; };
@@ -196,8 +196,8 @@
 		92E1C6B926BCE8CD004FD867 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 		92E1C6BB26BCE9F6004FD867 /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
 		92EC2C7226522D5500A4FE9C /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
-		92EF47A626C21AC500B9A568 /* Feed.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Feed.strings; sourceTree = "<group>"; };
 		92EF47A826C21D5300B9A568 /* FeedViewControllerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Localization.swift"; sourceTree = "<group>"; };
+		92EF47AF26C21FBC00B9A568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		92F40FCE2609D6A90001B305 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 		92F40FD72609D89B0001B305 /* ManagedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
 		92F40FDC2609D92F0001B305 /* ManagedFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedFeedImage.swift; sourceTree = "<group>"; };
@@ -353,7 +353,7 @@
 				921EAFB726BB6398001964B6 /* Feed.storyboard */,
 				92E1C6B926BCE8CD004FD867 /* UITableView+Dequeueing.swift */,
 				92E1C6BB26BCE9F6004FD867 /* UIImageView+Animations.swift */,
-				92EF47A626C21AC500B9A568 /* Feed.strings */,
+				92EF47B026C21FBC00B9A568 /* Feed.strings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -745,7 +745,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92EF47A726C21AC500B9A568 /* Feed.strings in Resources */,
+				92EF47AE26C21FBC00B9A568 /* Feed.strings in Resources */,
 				921EAFB826BB6398001964B6 /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -907,6 +907,17 @@
 			targetProxy = 92999D842645318C00301FE1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92EF47B026C21FBC00B9A568 /* Feed.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92EF47AF26C21FBC00B9A568 /* en */,
+			);
+			name = Feed.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		925AF95D260AD82B00752A5A /* Debug */ = {
