@@ -328,10 +328,7 @@
 				928D120726A281A100EF54BA /* UIButton+TestHelpers.swift */,
 				928D120926A2821700EF54BA /* UIControl+TestHelpers.swift */,
 				928D120E26A2839500EF54BA /* FeedImageCell+TestHelpers.swift */,
-				928D121026A2840200EF54BA /* FeedViewControllerTests+LoaderSpy.swift */,
-				928D121226A2849300EF54BA /* FeedViewControllerTests+Assertions.swift */,
 				928D121426A2851D00EF54BA /* UIImage+TestHelpers.swift */,
-				92EF47A826C21D5300B9A568 /* FeedViewControllerTests+Localization.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -348,6 +345,7 @@
 		928D120C26A2831800EF54BA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				92EF47AA26C21DCF00B9A568 /* Helpers */,
 				9209777E2644EE260091AD5C /* FeedViewControllerTests.swift */,
 			);
 			path = Controllers;
@@ -526,6 +524,16 @@
 				92BE936D25D77FD100BDFC84 /* RemoteFeedItem.swift */,
 			);
 			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		92EF47AA26C21DCF00B9A568 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				928D121026A2840200EF54BA /* FeedViewControllerTests+LoaderSpy.swift */,
+				928D121226A2849300EF54BA /* FeedViewControllerTests+Assertions.swift */,
+				92EF47A826C21D5300B9A568 /* FeedViewControllerTests+Localization.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		92F40FBB2609D5B20001B305 /* Infrastructure */ = {
