@@ -319,9 +319,9 @@
 				9274B76E26A6EF8400F4C8F4 /* FeedUIComposer.swift */,
 				92184B3B26CA137900F36DE0 /* MainQueueDispatchDecorator.swift */,
 				92184B3D26CA13C900F36DE0 /* WeakRefVirtualProxy.swift */,
-				92184B3F26CA140100F36DE0 /* FeedViewAdapter.swift */,
 				92184B4126CA144100F36DE0 /* FeedImageDataLoaderPresentationAdapter.swift */,
 				92184B4326CA149100F36DE0 /* FeedLoaderPresentationAdapter.swift */,
+				92184B3F26CA140100F36DE0 /* FeedViewAdapter.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
