@@ -20,7 +20,6 @@ public protocol FeedErrorView {
     func display(_ viewModel: FeedErrorViewModel)
 }
 
-
 public final class FeedPresenter {
     
     private let feedView: FeedView
