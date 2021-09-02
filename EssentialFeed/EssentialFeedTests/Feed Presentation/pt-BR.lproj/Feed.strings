@@ -1,0 +1,9 @@
+/* 
+  Feed.strings
+  EssentialFeed
+
+  Created by Arifin Firdaus on 02/09/21.
+  Copyright © 2021 arifinfrds. All rights reserved.
+*/
+"FEED_VIEW_TITLE" = "Meu Feed";
+"FEED_VIEW_CONNECTION_ERROR" = "Não foi possível conectar com o servidor";
