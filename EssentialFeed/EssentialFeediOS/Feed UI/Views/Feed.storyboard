@@ -15,19 +15,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="hR1-KT-sOf">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="sGl-Qy-nmA" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqg-V5-Gf2">
+                                    <rect key="frame" x="8" y="8" width="398" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9R-jl-5qM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <connections>
+                                        <action selector="hideMessageAnimated" destination="sGl-Qy-nmA" eventType="touchUpInside" id="jI1-Je-egw"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="L9R-jl-5qM" secondAttribute="trailing" id="DrP-Ap-uFa"/>
+                                <constraint firstAttribute="bottom" secondItem="Cqg-V5-Gf2" secondAttribute="bottom" constant="8" id="EtF-dy-P8b"/>
+                                <constraint firstAttribute="bottom" secondItem="L9R-jl-5qM" secondAttribute="bottom" id="GPM-PW-u7K"/>
+                                <constraint firstItem="Cqg-V5-Gf2" firstAttribute="top" secondItem="sGl-Qy-nmA" secondAttribute="top" constant="8" id="S85-3e-zel"/>
+                                <constraint firstItem="Cqg-V5-Gf2" firstAttribute="leading" secondItem="sGl-Qy-nmA" secondAttribute="leading" constant="8" id="WX3-eq-DmH"/>
+                                <constraint firstItem="L9R-jl-5qM" firstAttribute="top" secondItem="sGl-Qy-nmA" secondAttribute="top" id="b9a-6r-9HR"/>
+                                <constraint firstAttribute="trailing" secondItem="Cqg-V5-Gf2" secondAttribute="trailing" constant="8" id="ebt-iV-t8I"/>
+                                <constraint firstItem="L9R-jl-5qM" firstAttribute="leading" secondItem="sGl-Qy-nmA" secondAttribute="leading" id="pb3-C8-n3o"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="Cqg-V5-Gf2" id="lY7-q6-xez"/>
+                            </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="GGe-k7-nB1">
-                            <rect key="frame" x="0.0" y="563.00000034679067" width="414" height="16"/>
+                            <rect key="frame" x="0.0" y="597.00000034679067" width="414" height="16"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="498" id="Ief-Sh-Iat" customClass="FeedImageCell" customModule="EssentialFeediOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="40.5" width="414" height="498"/>
+                                <rect key="frame" x="0.0" y="74.5" width="414" height="498"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ief-Sh-Iat" id="ZWB-lB-4rk">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="498"/>
@@ -157,6 +184,9 @@
                             <action selector="refresh" destination="bhE-1r-cyy" eventType="valueChanged" id="tkk-jD-rs4"/>
                         </connections>
                     </refreshControl>
+                    <connections>
+                        <outlet property="errorView" destination="sGl-Qy-nmA" id="nQm-Vy-hu7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJ9-Wu-7Ml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
