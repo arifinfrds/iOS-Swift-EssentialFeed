@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6853D927040E3F0026908C /* LocalFeedImageDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6853D827040E3F0026908C /* LocalFeedImageDataLoaderTests.swift */; };
 		920077C526F4453B00858400 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D121926A2865900EF54BA /* FeedImageDataLoader.swift */; };
 		9209777F2644EE260091AD5C /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9209777E2644EE260091AD5C /* FeedUIIntegrationTests.swift */; };
 		92184B3C26CA137900F36DE0 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92184B3B26CA137900F36DE0 /* MainQueueDispatchDecorator.swift */; };
@@ -146,6 +147,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A6853D827040E3F0026908C /* LocalFeedImageDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoaderTests.swift; sourceTree = "<group>"; };
 		9209777D2644EE250091AD5C /* EssentialFeediOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EssentialFeediOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		9209777E2644EE260091AD5C /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		92184B3B26CA137900F36DE0 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
@@ -565,6 +567,7 @@
 				9274406125F07C0E00343EAE /* ValidateFeedCacheUseCaseTests.swift */,
 				926ED95D25F74B6700ED25C8 /* FeedStore implementation Inbox.md */,
 				924B987A2606FCD100DCEC29 /* CoreDataFeedStoreTests.swift */,
+				1A6853D827040E3F0026908C /* LocalFeedImageDataLoaderTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -943,6 +946,7 @@
 				92A95D2125FF097400E00CD2 /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
 				925CB14C26E08A7B002277F2 /* FeedLocalizationTests.swift in Sources */,
 				9274406C25F082E800343EAE /* SharedTestsHelpers.swift in Sources */,
+				1A6853D927040E3F0026908C /* LocalFeedImageDataLoaderTests.swift in Sources */,
 				929A4A0627003F59002FA41D /* HTTPClientSpy.swift in Sources */,
 				92B4B7B825EDCCA300392D56 /* FeedStoreSpy.swift in Sources */,
 				9274406725F081C200343EAE /* FeedCacheTestsHelpers.swift in Sources */,
