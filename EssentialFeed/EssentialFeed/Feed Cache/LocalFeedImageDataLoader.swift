@@ -56,4 +56,10 @@ public final class LocalFeedImageDataLoader {
 		}
 		return task
 	}
+
+	public typealias SaveResult = Result<Void, Swift.Error>
+
+	public func save(_ data: Data, for url: URL, completion: @escaping (SaveResult) -> Void) {
+		store.insert(data, for: url) { _ in }
+	}
 }
