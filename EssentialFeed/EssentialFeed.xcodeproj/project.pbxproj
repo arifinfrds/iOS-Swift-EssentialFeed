@@ -516,12 +516,12 @@
 			isa = PBXGroup;
 			children = (
 				92F40FBB2609D5B20001B305 /* Infrastructure */,
-				929846EC25D6A15E0006A245 /* LocalFeedLoader.swift */,
-				929846F125D6A1C10006A245 /* FeedStore.swift */,
-				92BE937225D77FED00BDFC84 /* LocalFeedImage.swift */,
 				922582C525F22F1400AC8D89 /* FeedCachePolicy.swift */,
-				1A6853DA270415A10026908C /* FeedImageDataStore.swift */,
+				929846EC25D6A15E0006A245 /* LocalFeedLoader.swift */,
 				1A6853DC270415CB0026908C /* LocalFeedImageDataLoader.swift */,
+				92BE937225D77FED00BDFC84 /* LocalFeedImage.swift */,
+				929846F125D6A1C10006A245 /* FeedStore.swift */,
+				1A6853DA270415A10026908C /* FeedImageDataStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
