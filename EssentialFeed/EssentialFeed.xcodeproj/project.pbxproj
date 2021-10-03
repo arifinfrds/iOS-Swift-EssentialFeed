@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A4403F72709DCBC00996B49 /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4403F62709DCBC00996B49 /* CoreDataFeedStore+FeedStore.swift */; };
 		1A6853D927040E3F0026908C /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6853D827040E3F0026908C /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
 		1A6853DB270415A10026908C /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6853DA270415A10026908C /* FeedImageDataStore.swift */; };
 		1A6853DD270415CB0026908C /* LocalFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6853DC270415CB0026908C /* LocalFeedImageDataLoader.swift */; };
@@ -153,6 +154,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A4403F62709DCBC00996B49 /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
 		1A6853D827040E3F0026908C /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		1A6853DA270415A10026908C /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
 		1A6853DC270415CB0026908C /* LocalFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoader.swift; sourceTree = "<group>"; };
@@ -621,6 +623,7 @@
 				92F40FD72609D89B0001B305 /* ManagedCache.swift */,
 				92F40FDC2609D92F0001B305 /* ManagedFeedImage.swift */,
 				1A8AAC302705B1E0008E3BCA /* CoreDataFeedStore+FeedImageDataLoader.swift */,
+				1A4403F62709DCBC00996B49 /* CoreDataFeedStore+FeedStore.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -933,6 +936,7 @@
 				922582C625F22F1400AC8D89 /* FeedCachePolicy.swift in Sources */,
 				92D70CE72358688100C5D22B /* RemoteFeedLoader.swift in Sources */,
 				925C6A64260727A100FF9753 /* CoreDataFeedStore.swift in Sources */,
+				1A4403F72709DCBC00996B49 /* CoreDataFeedStore+FeedStore.swift in Sources */,
 				925CB14526E08470002277F2 /* FeedViewModel.swift in Sources */,
 				92BE937325D77FED00BDFC84 /* LocalFeedImage.swift in Sources */,
 				929846F225D6A1C10006A245 /* FeedStore.swift in Sources */,
