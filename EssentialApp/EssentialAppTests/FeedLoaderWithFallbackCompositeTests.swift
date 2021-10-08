@@ -44,12 +44,6 @@ class FeedLoaderWithFallbackCompositeTests: XCTestCase {
 		return sut
 	}
 
-	private func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString = #file, line: UInt = #line) {
-		addTeardownBlock { [weak instance] in
-			XCTAssertNil(instance, "Instance should have been deallocated. Potential memory leak.", file: file, line: line)
-		}
-	}
-
 	private func expect(_ sut: FeedLoader, toCompleteWith expectedResult: FeedLoader.Result, file: StaticString = #file, line: UInt = #line) {
 		let exp = expectation(description: "Wait for load completion")
 
