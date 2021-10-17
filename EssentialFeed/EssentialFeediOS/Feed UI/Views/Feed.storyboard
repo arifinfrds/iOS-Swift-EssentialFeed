@@ -103,6 +103,7 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-3" translatesAutoresizingMaskIntoConstraints="NO" id="amk-1Q-Tgn">
                                                             <rect key="frame" x="0.0" y="0.0" width="382" height="382"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="feed-image-view"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="amk-1Q-Tgn" secondAttribute="height" multiplier="1:1" id="SdT-iv-oPG"/>
                                                             </constraints>
