@@ -48,6 +48,7 @@
 		929629E6272269D50013248F /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929629E0272269D50013248F /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		929629E7272269D50013248F /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929629DC272269D50013248F /* FeedViewAdapter.swift */; };
 		929629E92722893F0013248F /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929629E82722893F0013248F /* FeedAcceptanceTests.swift */; };
+		929629EB272298AF0013248F /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929629EA272298AF0013248F /* HTTPClientStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		929629E0272269D50013248F /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		929629E1272269D50013248F /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		929629E82722893F0013248F /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
+		929629EA272298AF0013248F /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 				9217733E271518CA00A2EE17 /* XCTestCase+FeedLoader.swift */,
 				9207B1912719B8AA001A077F /* FeedImageDataLoaderSpy.swift */,
 				9207B1932719B951001A077F /* XCTestCase+FeedImageDataLoader.swift */,
+				929629EA272298AF0013248F /* HTTPClientStub.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			files = (
 				929629D1272269010013248F /* FeedViewControllerTests+Localization.swift in Sources */,
 				92574AEA270FF538004FD315 /* SharedTestHelpers.swift in Sources */,
+				929629EB272298AF0013248F /* HTTPClientStub.swift in Sources */,
 				929629D0272269010013248F /* UIRefreshControl+TestHelpers.swift in Sources */,
 				929629D7272269010013248F /* UIImage+TestHelpers.swift in Sources */,
 				929629DB272269630013248F /* FeedUIIntegrationTests.swift in Sources */,
