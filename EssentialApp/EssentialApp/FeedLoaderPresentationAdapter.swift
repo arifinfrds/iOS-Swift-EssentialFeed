@@ -8,6 +8,7 @@
 
 import Foundation
 import EssentialFeed
+import EssentialFeediOS
 
 class FeedLoaderPresentationAdapter: FeedViewControllerDelegate {
     

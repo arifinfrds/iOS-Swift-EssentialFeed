@@ -1,5 +1,5 @@
 //
-//  FeedUIIntegrationTests+Assertions.swift
+//  FeedUIIntegrationTests+TestHelpers.swift
 //  EssentialFeediOSTests
 //
 //  Created by Arifin Firdaus on 17/07/21.
@@ -37,6 +37,9 @@ extension FeedViewController {
     }
     
     func feedImageView(at row: Int) -> UITableViewCell? {
+        guard numberOfRenderedFeedImageViews() > row else {
+            return nil
+        }
         let ds = tableView.dataSource
         let index = IndexPath(row: row, section: feedImagesSection)
         return ds?.tableView(tableView, cellForRowAt: index)
@@ -60,5 +63,9 @@ extension FeedViewController {
         delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: index)
         
         return view
+    }
+    
+    func renderedFeedImageData(at index: Int) -> Data? {
+        return simulateFeedImageViewVisible(at: index)?.renderedImage
     }
 }
