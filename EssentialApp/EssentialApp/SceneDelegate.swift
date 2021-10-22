@@ -58,7 +58,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     primary: localImageLoader,
                     fallback: FeedImageDataLoaderCacheDecorator(
                         decoratee: remoteImageLoader,
-                        cache: localImageLoader))))
+                        cache: localImageLoader)
+                )
+            )
+        )
     }
     
     func makeRemoteClient() -> HTTPClient {
