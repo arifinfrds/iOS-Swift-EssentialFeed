@@ -6,9 +6,9 @@
 //  Copyright © 2021 arifinfrds. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import EssentialFeed
+import EssentialFeediOS
 
 public final class FeedUIComposer {
     
