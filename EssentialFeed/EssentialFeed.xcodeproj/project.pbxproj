@@ -402,10 +402,7 @@
 			children = (
 				92BB41C4272645350065E60E /* Helpers */,
 				92EC2C7226522D5500A4FE9C /* FeedImageCell.swift */,
-				92FE041B268A09500097173F /* UIView+Shimmering.swift */,
 				921EAFB726BB6398001964B6 /* Feed.storyboard */,
-				92E1C6B926BCE8CD004FD867 /* UITableView+Dequeueing.swift */,
-				92E1C6BB26BCE9F6004FD867 /* UIImageView+Animations.swift */,
 				925CB14A26E087CC002277F2 /* ErrorView.swift */,
 			);
 			path = Views;
@@ -539,6 +536,9 @@
 			isa = PBXGroup;
 			children = (
 				92BB41C5272645470065E60E /* UITableView+HeaderSizing.swift */,
+				92FE041B268A09500097173F /* UIView+Shimmering.swift */,
+				92E1C6B926BCE8CD004FD867 /* UITableView+Dequeueing.swift */,
+				92E1C6BB26BCE9F6004FD867 /* UIImageView+Animations.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
