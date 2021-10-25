@@ -15,7 +15,7 @@ public struct FeedErrorViewModel {
         return FeedErrorViewModel(message: nil)
     }
     
-    static func error(message: String) -> FeedErrorViewModel {
+    public static func error(message: String) -> FeedErrorViewModel {
         return FeedErrorViewModel(message: message)
     }
 }
