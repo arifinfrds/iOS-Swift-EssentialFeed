@@ -105,6 +105,7 @@ private extension FeedViewController {
         
         display(cells)
     }
+    
 }
 
 private class ImageStub: FeedImageCellControllerDelegate {
