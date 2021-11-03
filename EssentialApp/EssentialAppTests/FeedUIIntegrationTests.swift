@@ -286,6 +286,20 @@ class FeedUIIntegrationTests: XCTestCase {
         wait(for: [exp], timeout: 1.0)
     }
     
+    func test_loadFeedCompletion_rendersSuccessfullyLoadedEmptyFeedAfterNonEmptyFeed() {
+        let image0 = makeImage()
+        let image1 = makeImage()
+        let (sut, loader) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        loader.completeFeedLoading(with: [image0, image1], at: 0)
+        assertThat(sut, isRendering: [image0, image1])
+        
+        sut.simulateUserInitiatedFeedReload()
+        loader.completeFeedLoading(with: [], at: 1)
+        assertThat(sut, isRendering: [])
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: FeedViewController, loader: LoaderSpy) {
@@ -305,6 +319,8 @@ class FeedUIIntegrationTests: XCTestCase {
     }
     
     private func assertThat(_ sut: FeedViewController, isRendering feed: [FeedImage], file: StaticString = #file, line: UInt = #line) {
+        sut.view.enforceLayoutCycle()
+        
         guard sut.numberOfRenderedFeedImageViews() == feed.count else {
             return XCTFail("Expected \(feed.count) images, got \(sut.numberOfRenderedFeedImageViews()) instead.", file: file, line: line)
         }
@@ -312,6 +328,8 @@ class FeedUIIntegrationTests: XCTestCase {
         feed.enumerated().forEach { index, image in
             assertThat(sut, hasViewConfiguredFor: image, at: index, file: file, line: line)
         }
+        
+        executeRunLoopToCleanUpReferences()
     }
     
     private func assertThat(_ sut: FeedViewController, hasViewConfiguredFor image: FeedImage, at index: Int, file: StaticString = #file, line: UInt = #line) {
@@ -327,6 +345,10 @@ class FeedUIIntegrationTests: XCTestCase {
         XCTAssertEqual(cell.locationText, image.location, "Expected location text to be \(String(describing: image.location)) for image  view at index (\(index))", file: file, line: line)
         
         XCTAssertEqual(cell.descriptionText, image.description, "Expected description text to be \(String(describing: image.description)) for image view at index (\(index)", file: file, line: line)
+    }
+    
+    private func executeRunLoopToCleanUpReferences() {
+        RunLoop.current.run(until: Date())
     }
     
 }
