@@ -1067,8 +1067,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Arifin Firdaus (V6T249GHKX)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Distribution: Arifin Firdaus (V6T249GHKX)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V6T249GHKX;
@@ -1097,8 +1097,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Arifin Firdaus (V6T249GHKX)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Distribution: Arifin Firdaus (V6T249GHKX)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V6T249GHKX;
