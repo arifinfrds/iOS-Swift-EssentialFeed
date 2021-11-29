@@ -37,6 +37,7 @@
 		929629E92722893F0013248F /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929629E82722893F0013248F /* FeedAcceptanceTests.swift */; };
 		929629EB272298AF0013248F /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929629EA272298AF0013248F /* HTTPClientStub.swift */; };
 		929629ED272299C40013248F /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929629EC272299C40013248F /* InMemoryFeedStore.swift */; };
+		92D8F60E2754BE47002B4735 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8F60D2754BE47002B4735 /* CombineHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		929629E82722893F0013248F /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		929629EA272298AF0013248F /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 		929629EC272299C40013248F /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
+		92D8F60D2754BE47002B4735 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				1A15C55A270E8ABC00719525 /* Assets.xcassets */,
 				1A15C55C270E8ABC00719525 /* LaunchScreen.storyboard */,
 				1A15C55F270E8ABC00719525 /* Info.plist */,
+				92D8F60D2754BE47002B4735 /* CombineHelpers.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			files = (
 				929629E7272269D50013248F /* FeedViewAdapter.swift in Sources */,
 				1A15C556270E8AB600719525 /* ViewController.swift in Sources */,
+				92D8F60E2754BE47002B4735 /* CombineHelpers.swift in Sources */,
 				929629E6272269D50013248F /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				929629E3272269D50013248F /* WeakRefVirtualProxy.swift in Sources */,
 				1A15C552270E8AB600719525 /* AppDelegate.swift in Sources */,
