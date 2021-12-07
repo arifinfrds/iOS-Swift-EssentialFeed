@@ -12,7 +12,6 @@ import EssentialFeed
 class EssentialFeedAPIEndToEndTests: XCTestCase {
     
     func test_endToEndServerGETFeedResult_matchesFixedTestsAccountData() {
-        // when & then
         switch getFeedResult() {
         case let .success(imageFeed)?:
             XCTAssertEqual(imageFeed.count, 8)

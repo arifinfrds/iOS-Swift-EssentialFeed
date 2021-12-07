@@ -12,40 +12,31 @@ import EssentialFeed
 class LoadFeedFromRemoteUseCaseTests: XCTestCase {
     
     func test_init_doesNotRequestDataFromURL() {
-        // given
         let (_, client) = makeSUT()
         
-        // then
         XCTAssertTrue(client.requestedURLs.isEmpty)
     }
     
     func test_load_shouldRequestsDataFromURL() {
-        // given
         let url = URL(string: "https://a-given-url.com")!
         let (sut, client) = makeSUT(url: url)
         
-        // when
         sut.load { _ in }
         
-        // then
         XCTAssertEqual(client.requestedURLs, [url])
     }
     
     func test_loadTwice_shouldRequestsDataFromURLTwice() {
-        // given
         let url = URL(string: "https://a-given-url.com")!
         let (sut, client) = makeSUT(url: url)
         
-        // when
         sut.load { _ in }
         sut.load { _ in }
         
-        // then
         XCTAssertEqual(client.requestedURLs, [url, url])
     }
     
     func test_load_deliversErrorOnClientError() {
-        // given
         let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWithResult: failure(.connectivity), when: {
@@ -55,7 +46,6 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
     }
     
     func test_load_deliversErrorOnNon200HTTPResponse() {
-        // given
         let (sut, client) = makeSUT()
         var capturedErrors: [RemoteFeedLoader.Error] = []
         
@@ -70,7 +60,6 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
     }
     
     func test_load_deliversErrorOn200HTTPResponseWithInvalidJSONData() {
-        // given
         let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWithResult: failure(.invalidData), when: {
@@ -109,12 +98,10 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
     }
     
     func test_load_doesNotDeliverResultsAfterSUTInstanceHasBeenDeallocated() {
-        // given
         let url = URL(string: "https://any-url.com")!
         let client = HTTPClientSpy()
         var sut: RemoteFeedLoader? = RemoteFeedLoader(url: url, client: client)
         
-        // when
         var capturedResults: [RemoteFeedLoader.Result] = []
         sut?.load { result in
             capturedResults.append(result)
@@ -122,7 +109,6 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         sut = nil
         client.complete(withStatusCode: 200, data: makeItemsJSON([]))
         
-        // then
         XCTAssertTrue(capturedResults.isEmpty)
     }
     
@@ -158,7 +144,7 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
             "location": location,
             "image": imageURL.absoluteString
         ]
-        .compactMapValues { $0 }
+            .compactMapValues { $0 }
         
         return (item, json)
     }
@@ -194,7 +180,7 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
             
         }
         action()
-
+        
         wait(for: [exp], timeout: 2.0)
     }
     
