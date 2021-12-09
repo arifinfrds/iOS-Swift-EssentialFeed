@@ -11,40 +11,6 @@ import EssentialFeed
 
 class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
     
-    func test_init_doesNotRequestDataFromURL() {
-        let (_, client) = makeSUT()
-        
-        XCTAssertTrue(client.requestedURLs.isEmpty)
-    }
-    
-    func test_load_shouldRequestsDataFromURL() {
-        let url = URL(string: "https://a-given-url.com")!
-        let (sut, client) = makeSUT(url: url)
-        
-        sut.load { _ in }
-        
-        XCTAssertEqual(client.requestedURLs, [url])
-    }
-    
-    func test_loadTwice_shouldRequestsDataFromURLTwice() {
-        let url = URL(string: "https://a-given-url.com")!
-        let (sut, client) = makeSUT(url: url)
-        
-        sut.load { _ in }
-        sut.load { _ in }
-        
-        XCTAssertEqual(client.requestedURLs, [url, url])
-    }
-    
-    func test_load_deliversErrorOnClientError() {
-        let (sut, client) = makeSUT()
-        
-        expect(sut, toCompleteWithResult: failure(.connectivity), when: {
-            let clientError = NSError(domain: "error", code: 1, userInfo: nil)
-            client.complete(with: clientError)
-        })
-    }
-    
     func test_load_deliversErrorOnNon2xxHTTPResponse() {
         let (sut, client) = makeSUT()
         var capturedErrors: [RemoteImageCommentsLoader.Error] = []
@@ -90,15 +56,15 @@ class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
         let (sut, client) = makeSUT()
         
         let item1 = makeItem(
-             id: UUID(),
-             message: "a message",
-             createdAt: (Date(timeIntervalSince1970: 1598627222), "2020-08-28T15:07:02+00:00"),
-             username: "a username")
+            id: UUID(),
+            message: "a message",
+            createdAt: (Date(timeIntervalSince1970: 1598627222), "2020-08-28T15:07:02+00:00"),
+            username: "a username")
         let item2 = makeItem(
-             id: UUID(),
-             message: "another message",
-             createdAt: (Date(timeIntervalSince1970: 1577881882), "2020-01-01T12:31:22+00:00"),
-             username: "another username")
+            id: UUID(),
+            message: "another message",
+            createdAt: (Date(timeIntervalSince1970: 1577881882), "2020-01-01T12:31:22+00:00"),
+            username: "another username")
         let items = [item1.model, item2.model]
         
         let samples = [200, 201, 250, 280, 299]
@@ -110,22 +76,6 @@ class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
             })
         }
     }
-    
-    func test_load_doesNotDeliverResultsAfterSUTInstanceHasBeenDeallocated() {
-        let url = URL(string: "https://any-url.com")!
-        let client = HTTPClientSpy()
-        var sut: RemoteImageCommentsLoader? = RemoteImageCommentsLoader(url: url, client: client)
-        
-        var capturedResults: [RemoteImageCommentsLoader.Result] = []
-        sut?.load { result in
-            capturedResults.append(result)
-        }
-        sut = nil
-        client.complete(withStatusCode: 200, data: makeItemsJSON([]))
-        
-        XCTAssertTrue(capturedResults.isEmpty)
-    }
-    
     
     // MARK: - Helpers
     
