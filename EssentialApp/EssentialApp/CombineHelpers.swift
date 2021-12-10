@@ -5,8 +5,8 @@
 //  Created by Arifin Firdaus on 29/11/21.
 //
 
-import Combine
 import Foundation
+import Combine
 import EssentialFeed
 
 public extension FeedImageDataLoader {
@@ -75,7 +75,6 @@ extension Publisher {
 }
 
 extension DispatchQueue {
-    
     static var immediateWhenOnMainQueueScheduler: ImmediateWhenOnMainQueueScheduler {
         ImmediateWhenOnMainQueueScheduler.shared
     }
@@ -109,7 +108,7 @@ extension DispatchQueue {
             guard isMainQueue() else {
                 return DispatchQueue.main.schedule(options: options, action)
             }
-            
+                        
             action()
         }
         
