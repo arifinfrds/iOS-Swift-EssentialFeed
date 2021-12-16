@@ -62,8 +62,8 @@ class CacheFeedImageDataUseCaseTests: XCTestCase {
 	private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: LocalFeedImageDataLoader, store: FeedImageDataStoreSpy) {
 		let store = FeedImageDataStoreSpy()
 		let sut = LocalFeedImageDataLoader(store: store)
-		trackForMemoryLeaks(for: store, file: file, line: line)
-		trackForMemoryLeaks(for: sut, file: file, line: line)
+		trackForMemoryLeaks(store, file: file, line: line)
+		trackForMemoryLeaks(sut, file: file, line: line)
 		return (sut, store)
 	}
 
