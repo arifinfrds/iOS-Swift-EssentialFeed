@@ -35,9 +35,9 @@ class FeedItemsMapperTests: XCTestCase {
     
     func test_map_deliversNoItemsOn200HTTPResponseWithEmptyJSONList() throws {
         let emptyListJSON = makeItemsJSON([])
-
+        
         let result = try FeedItemsMapper.map(emptyListJSON, from: HTTPURLResponse(statusCode: 200))
-
+        
         XCTAssertEqual(result, [])
     }
     
@@ -55,16 +55,12 @@ class FeedItemsMapperTests: XCTestCase {
         let json = makeItemsJSON([item1.json, item2.json])
         
         let result = try FeedItemsMapper.map(json, from: HTTPURLResponse(statusCode: 200))
-
+        
         XCTAssertEqual(result, [item1.model, item2.model])
     }
     
     // MARK: - Helpers
-        
-    private func failure(_ error: RemoteFeedLoader.Error) -> RemoteFeedLoader.Result {
-        return .failure(error)
-    }
-        
+    
     private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedImage, json: [String: Any]) {
         let item = FeedImage(id: id, description: description, location: location, url: imageURL)
         
