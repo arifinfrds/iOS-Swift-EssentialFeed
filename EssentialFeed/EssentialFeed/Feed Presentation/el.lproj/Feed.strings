@@ -6,4 +6,4 @@
   Copyright © 2021 arifinfrds. All rights reserved.
 */
 "FEED_VIEW_TITLE" = "Το Feed μου";
-"FEED_VIEW_CONNECTION_ERROR" = "Δεν ήταν δυνατή η σύνδεση στο διακομιστή";
+"GENERIC_CONNECTION_ERROR" = "Δεν ήταν δυνατή η σύνδεση στο διακομιστή";
