@@ -54,11 +54,11 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         } else {
             refreshControl?.endRefreshing()
         }
-    }
-    
-    public func display(_ viewModel: FeedErrorViewModel) {
-        errorView?.message = viewModel.message
-    }
+	}
+	
+	public func display(_ viewModel: ResourceErrorViewModel) {
+		errorView?.message = viewModel.message
+	}
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableModel.count
