@@ -78,28 +78,29 @@ class LoadResourcePresenterTests: XCTestCase {
         return value
     }
     
-    private class ViewSpy: ResourceView, ResourceLoadingView, FeedErrorView {
-        typealias ResourceViewModel = String
-        
-        enum Message: Hashable {
-            case display(errorMessage: String?)
-            case display(isLoading: Bool)
-            case display(resourceViewModel: String)
-        }
-        
-        private(set) var messages = Set<Message>()
-        
-        func display(_ viewModel: FeedErrorViewModel) {
-            messages.insert(.display(errorMessage: viewModel.message))
-        }
-        
-        func display(_ viewModel: ResourceLoadingViewModel) {
-            messages.insert(.display(isLoading: viewModel.isLoading))
-        }
-        
-        func display(_ viewModel: String) {
-            messages.insert(.display(resourceViewModel: viewModel))
-        }
-    }
-    
+	private class ViewSpy: ResourceView, ResourceLoadingView, ResourceErrorView {
+		
+		typealias ResourceViewModel = String
+		
+		enum Message: Hashable {
+			case display(errorMessage: String?)
+			case display(isLoading: Bool)
+			case display(resourceViewModel: String)
+		}
+		
+		private(set) var messages = Set<Message>()
+		
+		func display(_ viewModel: ResourceErrorViewModel) {
+			messages.insert(.display(errorMessage: viewModel.message))
+		}
+		
+		func display(_ viewModel: ResourceLoadingViewModel) {
+			messages.insert(.display(isLoading: viewModel.isLoading))
+		}
+		
+		func display(_ viewModel: String) {
+			messages.insert(.display(resourceViewModel: viewModel))
+		}
+	}
+	
 }
