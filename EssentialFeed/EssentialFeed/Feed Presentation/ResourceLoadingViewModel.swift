@@ -1,5 +1,5 @@
 //
-//  FeedLoadingViewModel.swift
+//  ResourceLoadingViewModel.swift
 //  EssentialFeed
 //
 //  Created by Arifin Firdaus on 02/09/21.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct FeedLoadingViewModel {
+public struct ResourceLoadingViewModel {
     public let isLoading: Bool
 }
 
