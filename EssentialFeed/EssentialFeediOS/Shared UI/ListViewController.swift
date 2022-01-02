@@ -52,9 +52,9 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     
     public func display(_ viewModel: ResourceLoadingViewModel) {
         if viewModel.isLoading {
-            refreshControl?.beginRefreshing()
+            refreshControl?.update(isRefreshing: true)
         } else {
-            refreshControl?.endRefreshing()
+            refreshControl?.update(isRefreshing: false)
         }
 	}
 	
