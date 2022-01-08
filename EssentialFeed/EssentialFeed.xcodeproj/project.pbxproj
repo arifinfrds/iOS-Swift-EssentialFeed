@@ -71,6 +71,7 @@
 		9261B1C42595C70300754AE6 /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9261B1C32595C70300754AE6 /* EssentialFeedAPIEndToEndTests.swift */; };
 		9261B1C62595C70300754AE6 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928E4D9723496DB300FC8C21 /* EssentialFeed.framework */; };
 		9261B1CF2595C76200754AE6 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D6F6F12595C07800B6E691 /* XCTestCase+MemoryLeakTracker.swift */; };
+		926C1B8227892FB4001310DC /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926C1B8127892FB4001310DC /* UIView+Container.swift */; };
 		926ED95E25F74B6700ED25C8 /* FeedStore implementation Inbox.md in Resources */ = {isa = PBXBuildFile; fileRef = 926ED95D25F74B6700ED25C8 /* FeedStore implementation Inbox.md */; };
 		9274406225F07C0E00343EAE /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9274406125F07C0E00343EAE /* ValidateFeedCacheUseCaseTests.swift */; };
 		9274406725F081C200343EAE /* FeedCacheTestsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9274406625F081C200343EAE /* FeedCacheTestsHelpers.swift */; };
@@ -225,6 +226,7 @@
 		9261B1C12595C70300754AE6 /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9261B1C32595C70300754AE6 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		9261B1C52595C70300754AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		926C1B8127892FB4001310DC /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
 		926ED95D25F74B6700ED25C8 /* FeedStore implementation Inbox.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "FeedStore implementation Inbox.md"; sourceTree = "<group>"; };
 		9272DBD326C4C17600202DAE /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
 		9274406125F07C0E00343EAE /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 				92BB41C5272645470065E60E /* UITableView+HeaderSizing.swift */,
 				8124A1A52781A514008B4C5F /* UIRefreshControl+Helpers.swift */,
 				92827C5C27854A6C001D84BA /* CellController.swift */,
+				926C1B8127892FB4001310DC /* UIView+Container.swift */,
 			);
 			path = "Shared UI";
 			sourceTree = "<group>";
@@ -1105,6 +1108,7 @@
 				92E1C6BA26BCE8CD004FD867 /* UITableView+Dequeueing.swift in Sources */,
 				92FE041C268A09500097173F /* UIView+Shimmering.swift in Sources */,
 				92BB41C6272645470065E60E /* UITableView+HeaderSizing.swift in Sources */,
+				926C1B8227892FB4001310DC /* UIView+Container.swift in Sources */,
 				92827C5D27854A6C001D84BA /* CellController.swift in Sources */,
 				92E1C6BC26BCE9F6004FD867 /* UIImageView+Animations.swift in Sources */,
 				9275E0E72646656A00F26398 /* ListViewController.swift in Sources */,
